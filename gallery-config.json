@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-12-19T10:00:00Z",
+  "baseURL": "https://raw.githubusercontent.com/yourusername/livephotos-gallery/main",
+  "categories": [
+    {
+      "id": "nature",
+      "name": "Nature",
+      "description": "Beautiful nature scenes",
+      "items": [
+        {
+          "id": "sample_ocean",
+          "title": "Ocean Waves",
+          "description": "Calming ocean waves for relaxation",
+          "imageURL": "images/sample_ocean.jpg",
+          "videoURL": "videos/sample_ocean.mov",
+          "thumbnailURL": "thumbnails/sample_ocean_thumb.jpg",
+          "isPremium": false,
+          "tags": ["ocean", "nature", "blue", "relaxing"],
+          "duration": 5.0,
+          "size": {
+            "bytes": 3145728,
+            "formatted": "3.0 MB"
+          },
+          "createdAt": "2024-12-19T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "abstract",
+      "name": "Abstract",
+      "description": "Artistic and abstract patterns",
+      "items": [
+        {
+          "id": "sample_gradient",
+          "title": "Color Flow",
+          "description": "Smooth gradient transitions",
+          "imageURL": "images/sample_gradient.jpg",
+          "videoURL": "videos/sample_gradient.mov",
+          "thumbnailURL": "thumbnails/sample_gradient_thumb.jpg",
+          "isPremium": true,
+          "tags": ["abstract", "colors", "artistic"],
+          "duration": 4.0,
+          "size": {
+            "bytes": 2621440,
+            "formatted": "2.5 MB"
+          },
+          "createdAt": "2024-12-19T10:00:00Z"
+        }
+      ]
+    }
+  ]
+}
