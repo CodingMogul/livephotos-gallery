@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "lastUpdated": "2024-12-19T10:00:00Z",
-  "baseURL": "https://raw.githubusercontent.com/yourusername/livephotos-gallery/main",
+  "baseURL": "https://raw.githubusercontent.com/CodingMogul/livephotos-gallery/master",
   "categories": [
     {
       "id": "nature",
