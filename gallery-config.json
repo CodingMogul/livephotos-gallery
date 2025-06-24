@@ -23,6 +23,38 @@
             "formatted": "3.0 MB"
           },
           "createdAt": "2024-12-19T10:00:00Z"
+        },
+        {
+          "id": "sample_ocean_part",
+          "title": "Ocean Part",
+          "description": "A part of the ocean",
+          "imageURL": "images/sample_ocean_part.jpg",
+          "videoURL": "videos/sample_ocean_part.mov",
+          "thumbnailURL": "thumbnails/sample_ocean_part_thumb.jpg",
+          "isPremium": false,
+          "tags": ["ocean", "nature", "blue", "relaxing"],
+          "duration": 5.0,
+          "size": {
+            "bytes": 3145728,
+            "formatted": "3.0 MB"
+          },
+          "createdAt": "2024-12-19T10:00:00Z"
+        },
+        {
+          "id": "photo_part",
+          "title": "Photo Part",
+          "description": "Custom Live Photo from HEIC",
+          "imageURL": "images/photo_part.jpg",
+          "videoURL": "videos/photo_part.mov",
+          "thumbnailURL": "thumbnails/photo_part_thumb.jpg",
+          "isPremium": false,
+          "tags": ["custom", "nature"],
+          "duration": 1.0,
+          "size": {
+            "bytes": 12717,
+            "formatted": "12.4 KB"
+          },
+          "createdAt": "2025-06-23T00:00:00Z"
         }
       ]
     },
