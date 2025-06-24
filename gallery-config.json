@@ -9,52 +9,42 @@
       "description": "Beautiful nature scenes",
       "items": [
         {
-          "id": "sample_ocean",
-          "title": "Ocean Waves",
-          "description": "Calming ocean waves for relaxation",
-          "imageURL": "images/sample_ocean.jpg",
-          "videoURL": "videos/sample_ocean.mov",
-          "thumbnailURL": "thumbnails/sample_ocean_thumb.jpg",
-          "isPremium": false,
-          "tags": ["ocean", "nature", "blue", "relaxing"],
-          "duration": 5.0,
-          "size": {
-            "bytes": 3145728,
-            "formatted": "3.0 MB"
-          },
-          "createdAt": "2024-12-19T10:00:00Z"
-        },
-        {
-          "id": "sample_ocean_part",
-          "title": "Ocean Part",
-          "description": "A part of the ocean",
-          "imageURL": "images/sample_ocean_part.jpg",
-          "videoURL": "videos/sample_ocean_part.mov",
-          "thumbnailURL": "thumbnails/sample_ocean_part_thumb.jpg",
-          "isPremium": false,
-          "tags": ["ocean", "nature", "blue", "relaxing"],
-          "duration": 5.0,
-          "size": {
-            "bytes": 3145728,
-            "formatted": "3.0 MB"
-          },
-          "createdAt": "2024-12-19T10:00:00Z"
-        },
-        {
           "id": "photo_part",
           "title": "Photo Part",
           "description": "Custom Live Photo from HEIC",
-          "imageURL": "images/photo_part.jpg",
+          "imageURL": "images/photo_part.HEIC",
           "videoURL": "videos/photo_part.mov",
-          "thumbnailURL": "thumbnails/photo_part_thumb.jpg",
+          "thumbnailURL": "images/photo_part.HEIC",
           "isPremium": false,
-          "tags": ["custom", "nature"],
+          "tags": [
+            "custom",
+            "nature"
+          ],
           "duration": 1.0,
           "size": {
             "bytes": 12717,
             "formatted": "12.4 KB"
           },
           "createdAt": "2025-06-23T00:00:00Z"
+        },
+        {
+          "id": "photo_part_2",
+          "title": "Photo Part 2",
+          "description": "Photo Part 2 Live Photo",
+          "imageURL": "images/photo_part_2.HEIC",
+          "videoURL": "videos/photo_part_2.MOV",
+          "thumbnailURL": "images/photo_part_2.HEIC",
+          "isPremium": false,
+          "tags": [
+            "nature",
+            "custom"
+          ],
+          "duration": 3.0,
+          "size": {
+            "bytes": 1238528,
+            "formatted": "1.2 MB"
+          },
+          "createdAt": "2025-06-23T21:06:40.053708Z"
         }
       ]
     },
@@ -62,24 +52,7 @@
       "id": "abstract",
       "name": "Abstract",
       "description": "Artistic and abstract patterns",
-      "items": [
-        {
-          "id": "sample_gradient",
-          "title": "Color Flow",
-          "description": "Smooth gradient transitions",
-          "imageURL": "images/sample_gradient.jpg",
-          "videoURL": "videos/sample_gradient.mov",
-          "thumbnailURL": "thumbnails/sample_gradient_thumb.jpg",
-          "isPremium": true,
-          "tags": ["abstract", "colors", "artistic"],
-          "duration": 4.0,
-          "size": {
-            "bytes": 2621440,
-            "formatted": "2.5 MB"
-          },
-          "createdAt": "2024-12-19T10:00:00Z"
-        }
-      ]
+      "items": []
     }
   ]
 }
