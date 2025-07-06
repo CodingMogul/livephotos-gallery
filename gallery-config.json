@@ -16,10 +16,7 @@
           "videoURL": "videos/photo_part.mov",
           "thumbnailURL": "images/photo_part.HEIC",
           "isPremium": false,
-          "tags": [
-            "custom",
-            "nature"
-          ],
+          "tags": ["custom", "nature"],
           "duration": 1.0,
           "size": {
             "bytes": 12717,
@@ -35,10 +32,7 @@
           "videoURL": "videos/photo_part_2.MOV",
           "thumbnailURL": "images/photo_part_2.HEIC",
           "isPremium": false,
-          "tags": [
-            "nature",
-            "custom"
-          ],
+          "tags": ["nature", "custom"],
           "duration": 3.0,
           "size": {
             "bytes": 1238528,
@@ -47,12 +41,6 @@
           "createdAt": "2025-06-23T21:06:40.053708Z"
         }
       ]
-    },
-    {
-      "id": "abstract",
-      "name": "Abstract",
-      "description": "Artistic and abstract patterns",
-      "items": []
     }
   ]
 }
