@@ -138,7 +138,7 @@ def quick_import(name, title, category="nature", is_premium=False):
     
     return entry
 
-def update_gallery_config(entry, category="nature"):
+def update_gallery_config(entry, category="labubu"):
     """Automatically update gallery-config.json with new entry"""
     config_path = Path("gallery-config.json")
     

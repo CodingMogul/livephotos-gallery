@@ -4,9 +4,9 @@
   "baseURL": "https://raw.githubusercontent.com/CodingMogul/livephotos-gallery/master",
   "categories": [
     {
-      "id": "nature",
-      "name": "Nature",
-      "description": "Beautiful nature scenes",
+      "id": "labubu",
+      "name": "labubu",
+      "description": "Beautiful labubu scenes",
       "items": [
         {
           "id": "photo_part",
@@ -16,7 +16,7 @@
           "videoURL": "videos/photo_part.mov",
           "thumbnailURL": "images/photo_part.HEIC",
           "isPremium": false,
-          "tags": ["custom", "nature"],
+          "tags": ["custom", "labubu"],
           "duration": 1.0,
           "size": {
             "bytes": 12717,
@@ -39,6 +39,54 @@
             "formatted": "1.2 MB"
           },
           "createdAt": "2025-06-23T21:06:40.053708Z"
+        },
+        {
+          "id": "labubu1",
+          "title": "Labubu1",
+          "description": "Beautiful labubu scene 1",
+          "imageURL": "images/labubu1.jpg",
+          "videoURL": "videos/labubu1.mov",
+          "thumbnailURL": "thumbnails/labubu1_thumb.jpg",
+          "isPremium": false,
+          "tags": ["labubu", "custom"],
+          "duration": 1.0,
+          "size": {
+            "bytes": 4625,
+            "formatted": "4.5 KB"
+          },
+          "createdAt": "2024-12-19T10:00:00Z"
+        },
+        {
+          "id": "labubu2",
+          "title": "Labubu2",
+          "description": "Beautiful labubu scene 2",
+          "imageURL": "images/labubu2.jpg",
+          "videoURL": "videos/labubu2.mov",
+          "thumbnailURL": "thumbnails/labubu2_thumb.jpg",
+          "isPremium": false,
+          "tags": ["labubu", "custom"],
+          "duration": 1.0,
+          "size": {
+            "bytes": 25987,
+            "formatted": "25.4 KB"
+          },
+          "createdAt": "2024-12-19T10:00:00Z"
+        },
+        {
+          "id": "labubu3",
+          "title": "Labubu3",
+          "description": "Beautiful labubu scene 3",
+          "imageURL": "images/labubu3.jpg",
+          "videoURL": "videos/labubu3.mov",
+          "thumbnailURL": "thumbnails/labubu3_thumb.jpg",
+          "isPremium": false,
+          "tags": ["labubu", "custom"],
+          "duration": 1.0,
+          "size": {
+            "bytes": 5716,
+            "formatted": "5.6 KB"
+          },
+          "createdAt": "2024-12-19T10:00:00Z"
         }
       ]
     }
