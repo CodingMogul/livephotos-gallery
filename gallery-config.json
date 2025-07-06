@@ -44,15 +44,14 @@
           "id": "labubu1",
           "title": "Labubu1",
           "description": "Beautiful labubu scene 1",
-          "imageURL": "images/labubu1.jpg",
-          "videoURL": "videos/labubu1.mov",
-          "thumbnailURL": "thumbnails/labubu1_thumb.jpg",
+          "imageURL": "images/labubu1.HEIC",
+          "thumbnailURL": "images/labubu1.HEIC",
           "isPremium": false,
           "tags": ["labubu", "custom"],
           "duration": 1.0,
           "size": {
-            "bytes": 4625,
-            "formatted": "4.5 KB"
+            "bytes": 63992,
+            "formatted": "62.5 KB"
           },
           "createdAt": "2024-12-19T10:00:00Z"
         },
@@ -60,15 +59,14 @@
           "id": "labubu2",
           "title": "Labubu2",
           "description": "Beautiful labubu scene 2",
-          "imageURL": "images/labubu2.jpg",
-          "videoURL": "videos/labubu2.mov",
-          "thumbnailURL": "thumbnails/labubu2_thumb.jpg",
+          "imageURL": "images/labubu2.HEIC",
+          "thumbnailURL": "images/labubu2.HEIC",
           "isPremium": false,
           "tags": ["labubu", "custom"],
           "duration": 1.0,
           "size": {
-            "bytes": 25987,
-            "formatted": "25.4 KB"
+            "bytes": 118389,
+            "formatted": "115.6 KB"
           },
           "createdAt": "2024-12-19T10:00:00Z"
         },
@@ -76,15 +74,14 @@
           "id": "labubu3",
           "title": "Labubu3",
           "description": "Beautiful labubu scene 3",
-          "imageURL": "images/labubu3.jpg",
-          "videoURL": "videos/labubu3.mov",
-          "thumbnailURL": "thumbnails/labubu3_thumb.jpg",
+          "imageURL": "images/labubu3.HEIC",
+          "thumbnailURL": "images/labubu3.HEIC",
           "isPremium": false,
           "tags": ["labubu", "custom"],
           "duration": 1.0,
           "size": {
-            "bytes": 5716,
-            "formatted": "5.6 KB"
+            "bytes": 69075,
+            "formatted": "67.5 KB"
           },
           "createdAt": "2024-12-19T10:00:00Z"
         }
