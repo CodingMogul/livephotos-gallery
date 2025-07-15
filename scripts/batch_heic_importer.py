@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 """
 HEIC Batch Gallery Importer
-Processes HEIC Live Photos in batch and adds them to the gallery config.
+Processes folders containing paired HEIC and MOV files for Live Photos.
 
 This script:
-1. Extracts MOV videos from HEIC Live Photos
-2. Copies HEIC files to images folder
-3. Updates gallery-config.json with new items
+1. Processes folders containing paired .HEIC and .MOV files
+2. Copies HEIC files to images folder and MOV files to videos folder
+3. Updates gallery-config.json with new items linking the pairs
 4. Supports tag-based categorization from command line flags
 
 Usage:
-    python3 batch_heic_importer.py path/to/heic/files/*.HEIC --labubu --custom
-    python3 batch_heic_importer.py /path/to/single/file.HEIC --nature --scenic --premium
+    python3 batch_heic_importer.py path/to/folders/* --labubu --custom
+    python3 batch_heic_importer.py /path/to/single/folder --nature --scenic --premium
 
 Requirements:
-    - exiftool (brew install exiftool)
-    - ffmpeg (brew install ffmpeg)
+    - ffmpeg (brew install ffmpeg) for video analysis
 """
 
 import sys
@@ -29,15 +28,12 @@ import re
 
 def check_dependencies():
     """Check if required tools are installed"""
-    tools = ['exiftool', 'ffmpeg']
+    tools = ['ffmpeg']
     missing = []
     
     for tool in tools:
         try:
-            if tool == 'exiftool':
-                result = subprocess.run([tool, '-ver'], capture_output=True, text=True)
-            else:  # ffmpeg
-                result = subprocess.run([tool, '-version'], capture_output=True, text=True)
+            result = subprocess.run([tool, '-version'], capture_output=True, text=True)
             
             if result.returncode != 0:
                 missing.append(tool)
@@ -53,42 +49,32 @@ def check_dependencies():
     
     return True
 
-def extract_video_from_heic(heic_path, output_name, videos_dir):
-    """Extract MOV video from HEIC Live Photo"""
-    heic_path = Path(heic_path)
+def copy_video_file(mov_path, output_name, videos_dir):
+    """Copy MOV video file to videos directory"""
+    mov_path = Path(mov_path)
     videos_dir = Path(videos_dir)
     videos_dir.mkdir(parents=True, exist_ok=True)
     
     mov_output = videos_dir / f"{output_name}.mov"
     
-    print(f"   🎬 Extracting video from {heic_path.name}...")
+    print(f"   🎬 Copying video file {mov_path.name}...")
     
-    # Use exiftool to extract embedded video
     try:
-        result = subprocess.run([
-            'exiftool', 
-            '-b',  # Binary output
-            '-EmbeddedVideoFile',  # Extract embedded video
-            str(heic_path)
-        ], capture_output=True)
-        
-        if result.returncode == 0 and result.stdout and len(result.stdout) > 0:
-            # Write the extracted video data to file
-            with open(mov_output, 'wb') as f:
-                f.write(result.stdout)
-            
-            if mov_output.exists() and mov_output.stat().st_size > 0:
-                print(f"   ✅ Successfully extracted video: {mov_output.name}")
-                return mov_output
-            else:
-                print(f"   ⚠️  No video found in {heic_path.name} (static HEIC)")
-                return None
-        else:
-            print(f"   ⚠️  No video found in {heic_path.name} (static HEIC)")
+        if not mov_path.exists():
+            print(f"   ❌ Video file not found: {mov_path}")
             return None
             
-    except subprocess.CalledProcessError as e:
-        print(f"   ❌ Error extracting video from {heic_path.name}: {e}")
+        shutil.copy2(mov_path, mov_output)
+        
+        if mov_output.exists() and mov_output.stat().st_size > 0:
+            print(f"   ✅ Successfully copied video: {mov_output.name}")
+            return mov_output
+        else:
+            print(f"   ❌ Failed to copy video file")
+            return None
+            
+    except Exception as e:
+        print(f"   ❌ Error copying video file {mov_path.name}: {e}")
         return None
 
 def get_video_duration(video_path):
@@ -141,14 +127,14 @@ def sanitize_filename(filename):
     name = name.strip('_')
     return name
 
-def create_gallery_item(heic_path, video_path, tags, gallery_root):
+def create_gallery_item(heic_path, video_path, tags, gallery_root, folder_name):
     """Create a gallery item dict for the config"""
     heic_path = Path(heic_path)
     gallery_root = Path(gallery_root)
     
-    # Generate ID and title from filename
-    base_name = sanitize_filename(heic_path.name)
-    title = heic_path.stem.replace('_', ' ').title()
+    # Generate ID and title from folder name
+    base_name = sanitize_filename(folder_name)
+    title = folder_name.replace('_', ' ').title()
     
     # Get file sizes and duration
     image_size_bytes, image_size_formatted = get_file_size(heic_path)
@@ -165,7 +151,7 @@ def create_gallery_item(heic_path, video_path, tags, gallery_root):
     item = {
         "id": base_name,
         "title": title,
-        "description": f"Custom Live Photo from HEIC",
+        "description": f"Live Photo from paired HEIC and MOV files",
         "imageURL": f"images/{heic_path.name}",
         "videoURL": video_url,
         "thumbnailURL": f"images/{heic_path.name}",
@@ -220,8 +206,8 @@ def find_or_create_category(config, category_name):
     config["categories"].append(new_category)
     return new_category
 
-def process_heic_files(heic_files, tags, gallery_root):
-    """Process multiple HEIC files"""
+def process_intake_folders(folder_paths, tags, gallery_root):
+    """Process multiple folders containing paired HEIC and MOV files"""
     gallery_root = Path(gallery_root)
     images_dir = gallery_root / "images"
     videos_dir = gallery_root / "videos"
@@ -240,35 +226,50 @@ def process_heic_files(heic_files, tags, gallery_root):
     
     processed_items = []
     
-    for heic_file in heic_files:
-        heic_path = Path(heic_file)
+    for folder_path in folder_paths:
+        folder = Path(folder_path)
         
-        if not heic_path.exists():
-            print(f"❌ File not found: {heic_file}")
+        if not folder.exists() or not folder.is_dir():
+            print(f"❌ Folder not found or not a directory: {folder_path}")
             continue
         
-        if not heic_path.suffix.upper() in ['.HEIC', '.HEIF']:
-            print(f"❌ Skipping non-HEIC file: {heic_file}")
+        print(f"\n📁 Processing folder: {folder.name}...")
+        
+        # Find HEIC and MOV files in the folder
+        heic_files = list(folder.glob("*.HEIC")) + list(folder.glob("*.heic"))
+        mov_files = list(folder.glob("*.MOV")) + list(folder.glob("*.mov"))
+        
+        if not heic_files:
+            print(f"   ❌ No HEIC files found in {folder.name}")
+            continue
+            
+        if not mov_files:
+            print(f"   ❌ No MOV files found in {folder.name}")
             continue
         
-        print(f"\n📸 Processing {heic_path.name}...")
+        # Use the first HEIC and MOV files found (assumes one pair per folder)
+        heic_file = heic_files[0]
+        mov_file = mov_files[0]
         
-        # Generate output name
-        output_name = sanitize_filename(heic_path.name)
+        print(f"   📸 Found HEIC: {heic_file.name}")
+        print(f"   🎬 Found MOV: {mov_file.name}")
+        
+        # Generate output name based on folder name
+        output_name = sanitize_filename(folder.name)
         
         # Copy HEIC to images directory
-        dest_heic = images_dir / heic_path.name
+        dest_heic = images_dir / heic_file.name
         if not dest_heic.exists():
-            shutil.copy2(heic_path, dest_heic)
+            shutil.copy2(heic_file, dest_heic)
             print(f"   ✅ Copied image: {dest_heic.name}")
         else:
             print(f"   ⚠️  Image already exists: {dest_heic.name}")
         
-        # Extract video if it's a Live Photo
-        video_path = extract_video_from_heic(heic_path, output_name, videos_dir)
+        # Copy MOV to videos directory
+        video_path = copy_video_file(mov_file, output_name, videos_dir)
         
         # Create gallery item
-        item = create_gallery_item(dest_heic, video_path, tags, gallery_root)
+        item = create_gallery_item(dest_heic, video_path, tags, gallery_root, folder.name)
         
         # Check if item already exists (by ID)
         existing_item = None
@@ -295,22 +296,22 @@ def process_heic_files(heic_files, tags, gallery_root):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Batch process HEIC Live Photos for gallery import",
+        description="Batch process folders containing paired HEIC and MOV files for gallery import",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Process multiple files with tags
-  python3 batch_heic_importer.py *.HEIC --labubu --custom
+  # Process multiple folders with tags
+  python3 batch_heic_importer.py intake/* --labubu --custom
   
-  # Process single file with premium tag
-  python3 batch_heic_importer.py photo.HEIC --nature --premium
+  # Process single folder with premium tag
+  python3 batch_heic_importer.py intake/photo_folder --nature --premium
   
-  # Process files in specific directory
-  python3 batch_heic_importer.py /path/to/photos/*.HEIC --scenic
+  # Process folders in specific directory
+  python3 batch_heic_importer.py /path/to/intake/* --scenic
         """
     )
     
-    parser.add_argument("files", nargs="+", help="HEIC files to process (supports wildcards)")
+    parser.add_argument("folders", nargs="+", help="Folders containing paired HEIC and MOV files (supports wildcards)")
     parser.add_argument("--gallery-root", default=".", help="Gallery root directory (default: current directory)")
     
     # Parse remaining arguments as tags
@@ -328,40 +329,40 @@ Examples:
     if not tags:
         tags = ['custom']
     
-    print("🚀 HEIC Batch Gallery Importer")
+    print("🚀 HEIC Batch Gallery Importer (Folder Mode)")
     print("=" * 50)
     print(f"📁 Gallery root: {Path(args.gallery_root).absolute()}")
     print(f"🏷️  Tags: {', '.join(tags)}")
-    print(f"📸 Files to process: {len(args.files)}")
+    print(f"📁 Folders to process: {len(args.folders)}")
     
     # Check dependencies
     if not check_dependencies():
         sys.exit(1)
     
-    # Expand file patterns and filter existing files
-    heic_files = []
-    for pattern in args.files:
+    # Expand folder patterns and filter existing folders
+    intake_folders = []
+    for pattern in args.folders:
         if '*' in pattern or '?' in pattern:
             # Glob pattern
             from glob import glob
             matches = glob(pattern)
-            heic_files.extend(matches)
+            intake_folders.extend(matches)
         else:
-            # Single file
-            heic_files.append(pattern)
+            # Single folder
+            intake_folders.append(pattern)
     
-    # Filter to existing files
-    existing_files = [f for f in heic_files if Path(f).exists()]
+    # Filter to existing folders
+    existing_folders = [f for f in intake_folders if Path(f).exists() and Path(f).is_dir()]
     
-    if not existing_files:
-        print("❌ No HEIC files found!")
+    if not existing_folders:
+        print("❌ No folders found!")
         sys.exit(1)
     
-    print(f"📋 Found {len(existing_files)} files to process")
+    print(f"📋 Found {len(existing_folders)} folders to process")
     
-    # Process files
+    # Process folders
     try:
-        processed_items, config_path = process_heic_files(existing_files, tags, args.gallery_root)
+        processed_items, config_path = process_intake_folders(existing_folders, tags, args.gallery_root)
         
         print(f"\n✅ Successfully processed {len(processed_items)} items!")
         print(f"📄 Updated gallery config: {config_path}")
