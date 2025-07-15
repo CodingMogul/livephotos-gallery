@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2024-12-19T10:00:00Z",
+  "lastUpdated": "2025-07-15T04:38:02.720726+00:00",
   "baseURL": "https://raw.githubusercontent.com/CodingMogul/livephotos-gallery/master",
   "categories": [
     {
@@ -16,7 +16,10 @@
           "videoURL": "videos/photo_part.mov",
           "thumbnailURL": "images/photo_part.HEIC",
           "isPremium": false,
-          "tags": ["custom", "labubu"],
+          "tags": [
+            "custom",
+            "labubu"
+          ],
           "duration": 1.0,
           "size": {
             "bytes": 12717,
@@ -32,7 +35,10 @@
           "videoURL": "videos/photo_part_2.MOV",
           "thumbnailURL": "images/photo_part_2.HEIC",
           "isPremium": false,
-          "tags": ["nature", "custom"],
+          "tags": [
+            "nature",
+            "custom"
+          ],
           "duration": 3.0,
           "size": {
             "bytes": 1238528,
@@ -48,7 +54,10 @@
           "videoURL": "",
           "thumbnailURL": "images/labubu1.HEIC",
           "isPremium": false,
-          "tags": ["labubu", "custom"],
+          "tags": [
+            "labubu",
+            "custom"
+          ],
           "duration": 1.0,
           "size": {
             "bytes": 63992,
@@ -64,7 +73,10 @@
           "videoURL": "",
           "thumbnailURL": "images/labubu2.HEIC",
           "isPremium": false,
-          "tags": ["labubu", "custom"],
+          "tags": [
+            "labubu",
+            "custom"
+          ],
           "duration": 1.0,
           "size": {
             "bytes": 118389,
@@ -80,7 +92,10 @@
           "videoURL": "",
           "thumbnailURL": "images/labubu3.HEIC",
           "isPremium": false,
-          "tags": ["labubu", "custom"],
+          "tags": [
+            "labubu",
+            "custom"
+          ],
           "duration": 1.0,
           "size": {
             "bytes": 69075,
