@@ -47,60 +47,6 @@
           "createdAt": "2025-06-23T21:06:40.053708Z"
         },
         {
-          "id": "labubu1",
-          "title": "Labubu1",
-          "description": "Custom Live Photo from HEIC",
-          "imageURL": "images/labubu1.HEIC",
-          "videoURL": "",
-          "thumbnailURL": "images/labubu1.HEIC",
-          "isPremium": false,
-          "tags": [
-            "labubu"
-          ],
-          "duration": 1.0,
-          "size": {
-            "bytes": 63992,
-            "formatted": "62.5 KB"
-          },
-          "createdAt": "2025-07-15T04:49:01.619256+00:00"
-        },
-        {
-          "id": "labubu2",
-          "title": "Labubu2",
-          "description": "Custom Live Photo from HEIC",
-          "imageURL": "images/labubu2.HEIC",
-          "videoURL": "",
-          "thumbnailURL": "images/labubu2.HEIC",
-          "isPremium": false,
-          "tags": [
-            "labubu"
-          ],
-          "duration": 1.0,
-          "size": {
-            "bytes": 118389,
-            "formatted": "115.6 KB"
-          },
-          "createdAt": "2025-07-15T04:49:01.705121+00:00"
-        },
-        {
-          "id": "labubu3",
-          "title": "Labubu3",
-          "description": "Custom Live Photo from HEIC",
-          "imageURL": "images/labubu3.HEIC",
-          "videoURL": "",
-          "thumbnailURL": "images/labubu3.HEIC",
-          "isPremium": false,
-          "tags": [
-            "labubu"
-          ],
-          "duration": 1.0,
-          "size": {
-            "bytes": 69075,
-            "formatted": "67.5 KB"
-          },
-          "createdAt": "2025-07-15T04:49:01.785057+00:00"
-        },
-        {
           "id": "photo_part_5",
           "title": "Photo Part 5",
           "description": "Live Photo from paired HEIC and MOV files",
@@ -117,42 +63,6 @@
             "formatted": "67.5 KB"
           },
           "createdAt": "2025-07-15T04:56:53.623215+00:00"
-        },
-        {
-          "id": "photo_part_6",
-          "title": "Photo Part 6",
-          "description": "Custom Live Photo from HEIC",
-          "imageURL": "images/photo_part 6.HEIC",
-          "videoURL": "",
-          "thumbnailURL": "images/photo_part 6.HEIC",
-          "isPremium": false,
-          "tags": [
-            "labubu"
-          ],
-          "duration": 1.0,
-          "size": {
-            "bytes": 63992,
-            "formatted": "62.5 KB"
-          },
-          "createdAt": "2025-07-15T04:52:28.655718+00:00"
-        },
-        {
-          "id": "photo_part_7",
-          "title": "Photo Part 7",
-          "description": "Custom Live Photo from HEIC",
-          "imageURL": "images/photo_part 7.HEIC",
-          "videoURL": "",
-          "thumbnailURL": "images/photo_part 7.HEIC",
-          "isPremium": false,
-          "tags": [
-            "labubu"
-          ],
-          "duration": 1.0,
-          "size": {
-            "bytes": 69075,
-            "formatted": "67.5 KB"
-          },
-          "createdAt": "2025-07-15T04:52:28.736377+00:00"
         },
         {
           "id": "photo_part_4",
