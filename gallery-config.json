@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-07-15T04:56:53.678074+00:00",
+  "lastUpdated": "2025-07-19T03:18:50.921792+00:00",
   "baseURL": "https://raw.githubusercontent.com/CodingMogul/livephotos-gallery/master",
   "categories": [
     {
@@ -99,6 +99,477 @@
             "formatted": "115.6 KB"
           },
           "createdAt": "2025-07-15T04:56:53.678035+00:00"
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "description": "Beautiful music scenes",
+      "items": [
+        {
+          "id": "live39927dab_4093_4fac_954e_6433072f65d6",
+          "title": "Live39927Dab-4093-4Fac-954E-6433072F65D6",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5633.HEIC",
+          "videoURL": "videos/live39927dab_4093_4fac_954e_6433072f65d6.mov",
+          "thumbnailURL": "images/IMG_5633.HEIC",
+          "isPremium": false,
+          "tags": [
+            "music"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 1253719,
+            "formatted": "1.2 MB"
+          },
+          "createdAt": "2025-07-19T03:01:35.536082+00:00"
+        },
+        {
+          "id": "live6879b43c_4164_440c_aa09_8cb814ec4df1",
+          "title": "Live6879B43C-4164-440C-Aa09-8Cb814Ec4Df1",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5635.HEIC",
+          "videoURL": "videos/live6879b43c_4164_440c_aa09_8cb814ec4df1.mov",
+          "thumbnailURL": "images/IMG_5635.HEIC",
+          "isPremium": false,
+          "tags": [
+            "music"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 2123782,
+            "formatted": "2.0 MB"
+          },
+          "createdAt": "2025-07-19T03:01:35.597027+00:00"
+        },
+        {
+          "id": "live7370d988_8c39_4e96_bffc_05d5f907875b",
+          "title": "Live7370D988-8C39-4E96-Bffc-05D5F907875B",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5636.HEIC",
+          "videoURL": "videos/live7370d988_8c39_4e96_bffc_05d5f907875b.mov",
+          "thumbnailURL": "images/IMG_5636.HEIC",
+          "isPremium": false,
+          "tags": [
+            "music"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 582601,
+            "formatted": "568.9 KB"
+          },
+          "createdAt": "2025-07-19T03:01:35.650095+00:00"
+        },
+        {
+          "id": "live9d71644c_efdb_4539_be98_7d85621d6bca",
+          "title": "Live9D71644C-Efdb-4539-Be98-7D85621D6Bca",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5638.HEIC",
+          "videoURL": "videos/live9d71644c_efdb_4539_be98_7d85621d6bca.mov",
+          "thumbnailURL": "images/IMG_5638.HEIC",
+          "isPremium": false,
+          "tags": [
+            "music"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 2305968,
+            "formatted": "2.2 MB"
+          },
+          "createdAt": "2025-07-19T03:01:35.715308+00:00"
+        },
+        {
+          "id": "liveab89fefb_32a4_46f8_bd9c_0392cfd066cd",
+          "title": "Liveab89Fefb-32A4-46F8-Bd9C-0392Cfd066Cd",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5637.HEIC",
+          "videoURL": "videos/liveab89fefb_32a4_46f8_bd9c_0392cfd066cd.mov",
+          "thumbnailURL": "images/IMG_5637.HEIC",
+          "isPremium": false,
+          "tags": [
+            "music"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 1883015,
+            "formatted": "1.8 MB"
+          },
+          "createdAt": "2025-07-19T03:01:35.780816+00:00"
+        },
+        {
+          "id": "livedba063b9_0955_408f_814d_3582411a062e",
+          "title": "Livedba063B9-0955-408F-814D-3582411A062E",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5634.HEIC",
+          "videoURL": "videos/livedba063b9_0955_408f_814d_3582411a062e.mov",
+          "thumbnailURL": "images/IMG_5634.HEIC",
+          "isPremium": false,
+          "tags": [
+            "music"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 343754,
+            "formatted": "335.7 KB"
+          },
+          "createdAt": "2025-07-19T03:01:35.833523+00:00"
+        },
+        {
+          "id": "livef5220dd2_8058_4403_abd5_5c835ee5fb28",
+          "title": "Livef5220Dd2-8058-4403-Abd5-5C835Ee5Fb28",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5631.HEIC",
+          "videoURL": "videos/livef5220dd2_8058_4403_abd5_5c835ee5fb28.mov",
+          "thumbnailURL": "images/IMG_5631.HEIC",
+          "isPremium": false,
+          "tags": [
+            "music"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 477043,
+            "formatted": "465.9 KB"
+          },
+          "createdAt": "2025-07-19T03:01:35.891871+00:00"
+        }
+      ]
+    },
+    {
+      "id": "cars",
+      "name": "Cars",
+      "description": "Beautiful cars scenes",
+      "items": [
+        {
+          "id": "live2df8dcc1_53cc_466f_a653_a876c4c8c3b6",
+          "title": "Live2Df8Dcc1-53Cc-466F-A653-A876C4C8C3B6",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5628.HEIC",
+          "videoURL": "videos/live2df8dcc1_53cc_466f_a653_a876c4c8c3b6.mov",
+          "thumbnailURL": "images/IMG_5628.HEIC",
+          "isPremium": false,
+          "tags": [
+            "cars"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 1129593,
+            "formatted": "1.1 MB"
+          },
+          "createdAt": "2025-07-19T03:15:00.072152+00:00"
+        },
+        {
+          "id": "live5864ca8d_35c5_48b2_a29a_770391cce105",
+          "title": "Live5864Ca8D-35C5-48B2-A29A-770391Cce105",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5625.HEIC",
+          "videoURL": "videos/live5864ca8d_35c5_48b2_a29a_770391cce105.mov",
+          "thumbnailURL": "images/IMG_5625.HEIC",
+          "isPremium": false,
+          "tags": [
+            "cars"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 1255376,
+            "formatted": "1.2 MB"
+          },
+          "createdAt": "2025-07-19T03:15:00.150799+00:00"
+        },
+        {
+          "id": "live79426b99_d30c_4af4_9352_ea140b288948",
+          "title": "Live79426B99-D30C-4Af4-9352-Ea140B288948",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5627.HEIC",
+          "videoURL": "videos/live79426b99_d30c_4af4_9352_ea140b288948.mov",
+          "thumbnailURL": "images/IMG_5627.HEIC",
+          "isPremium": false,
+          "tags": [
+            "cars"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 1362245,
+            "formatted": "1.3 MB"
+          },
+          "createdAt": "2025-07-19T03:15:00.257699+00:00"
+        },
+        {
+          "id": "live8b5b06e5_758f_4f0f_93a5_70228d9582e6",
+          "title": "Live8B5B06E5-758F-4F0F-93A5-70228D9582E6",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5624.HEIC",
+          "videoURL": "videos/live8b5b06e5_758f_4f0f_93a5_70228d9582e6.mov",
+          "thumbnailURL": "images/IMG_5624.HEIC",
+          "isPremium": false,
+          "tags": [
+            "cars"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 706149,
+            "formatted": "689.6 KB"
+          },
+          "createdAt": "2025-07-19T03:15:00.323801+00:00"
+        },
+        {
+          "id": "liveac3915c0_9fc3_46c6_8ea7_8898f79007a8",
+          "title": "Liveac3915C0-9Fc3-46C6-8Ea7-8898F79007A8",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5626.HEIC",
+          "videoURL": "videos/liveac3915c0_9fc3_46c6_8ea7_8898f79007a8.mov",
+          "thumbnailURL": "images/IMG_5626.HEIC",
+          "isPremium": false,
+          "tags": [
+            "cars"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 1929238,
+            "formatted": "1.8 MB"
+          },
+          "createdAt": "2025-07-19T03:15:00.382796+00:00"
+        }
+      ]
+    },
+    {
+      "id": "anime",
+      "name": "Anime",
+      "description": "Beautiful anime scenes",
+      "items": [
+        {
+          "id": "4bbdcb4c",
+          "title": "4Bbdcb4C",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5622.HEIC",
+          "videoURL": "videos/4bbdcb4c.mov",
+          "thumbnailURL": "images/IMG_5622.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.0,
+          "size": {
+            "bytes": 348046,
+            "formatted": "339.9 KB"
+          },
+          "createdAt": "2025-07-19T03:18:50.238257+00:00"
+        },
+        {
+          "id": "live03d18c08_c7ad_457b_ac57_4de59087d805",
+          "title": "Live03D18C08-C7Ad-457B-Ac57-4De59087D805",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5651.HEIC",
+          "videoURL": "videos/live03d18c08_c7ad_457b_ac57_4de59087d805.mov",
+          "thumbnailURL": "images/IMG_5651.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 2198956,
+            "formatted": "2.1 MB"
+          },
+          "createdAt": "2025-07-19T03:18:50.303737+00:00"
+        },
+        {
+          "id": "live0529629e_fdd3_405f_8196_b30d29f112e3",
+          "title": "Live0529629E-Fdd3-405F-8196-B30D29F112E3",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5645.HEIC",
+          "videoURL": "videos/live0529629e_fdd3_405f_8196_b30d29f112e3.mov",
+          "thumbnailURL": "images/IMG_5645.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 612012,
+            "formatted": "597.7 KB"
+          },
+          "createdAt": "2025-07-19T03:18:50.357425+00:00"
+        },
+        {
+          "id": "live0ba3e824_095f_4dea_a2db_aaf1f8837fd8",
+          "title": "Live0Ba3E824-095F-4Dea-A2Db-Aaf1F8837Fd8",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5649.HEIC",
+          "videoURL": "videos/live0ba3e824_095f_4dea_a2db_aaf1f8837fd8.mov",
+          "thumbnailURL": "images/IMG_5649.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 2007897,
+            "formatted": "1.9 MB"
+          },
+          "createdAt": "2025-07-19T03:18:50.417876+00:00"
+        },
+        {
+          "id": "live0d52d2e5_3896_4e61_8bfb_c7f8a020a5dc",
+          "title": "Live0D52D2E5-3896-4E61-8Bfb-C7F8A020A5Dc",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5650.HEIC",
+          "videoURL": "videos/live0d52d2e5_3896_4e61_8bfb_c7f8a020a5dc.mov",
+          "thumbnailURL": "images/IMG_5650.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 1341807,
+            "formatted": "1.3 MB"
+          },
+          "createdAt": "2025-07-19T03:18:50.472394+00:00"
+        },
+        {
+          "id": "live29894975_5792_4566_b97b_e68290f135be",
+          "title": "Live29894975-5792-4566-B97B-E68290F135Be",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5648.HEIC",
+          "videoURL": "videos/live29894975_5792_4566_b97b_e68290f135be.mov",
+          "thumbnailURL": "images/IMG_5648.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 169965,
+            "formatted": "166.0 KB"
+          },
+          "createdAt": "2025-07-19T03:18:50.523156+00:00"
+        },
+        {
+          "id": "live330f1a84_3cf6_413b_b706_ba350d53bd1c",
+          "title": "Live330F1A84-3Cf6-413B-B706-Ba350D53Bd1C",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5642.HEIC",
+          "videoURL": "videos/live330f1a84_3cf6_413b_b706_ba350d53bd1c.mov",
+          "thumbnailURL": "images/IMG_5642.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 1049542,
+            "formatted": "1.0 MB"
+          },
+          "createdAt": "2025-07-19T03:18:50.577135+00:00"
+        },
+        {
+          "id": "live409935f2_1988_4ca1_af54_03404581a97b",
+          "title": "Live409935F2-1988-4Ca1-Af54-03404581A97B",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5630.HEIC",
+          "videoURL": "videos/live409935f2_1988_4ca1_af54_03404581a97b.mov",
+          "thumbnailURL": "images/IMG_5630.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 2839542,
+            "formatted": "2.7 MB"
+          },
+          "createdAt": "2025-07-19T03:18:50.644217+00:00"
+        },
+        {
+          "id": "live618135fa_2b8e_4222_98b2_0dac79250552",
+          "title": "Live618135Fa-2B8E-4222-98B2-0Dac79250552",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5643.HEIC",
+          "videoURL": "videos/live618135fa_2b8e_4222_98b2_0dac79250552.mov",
+          "thumbnailURL": "images/IMG_5643.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 715715,
+            "formatted": "698.9 KB"
+          },
+          "createdAt": "2025-07-19T03:18:50.695835+00:00"
+        },
+        {
+          "id": "liveb0e446b4_b2e0_45c1_906f_2314a3617927",
+          "title": "Liveb0E446B4-B2E0-45C1-906F-2314A3617927",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5644.HEIC",
+          "videoURL": "videos/liveb0e446b4_b2e0_45c1_906f_2314a3617927.mov",
+          "thumbnailURL": "images/IMG_5644.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 908030,
+            "formatted": "886.7 KB"
+          },
+          "createdAt": "2025-07-19T03:18:50.753192+00:00"
+        },
+        {
+          "id": "livec9f9e4cb_b22e_447f_a656_ccf4fe9de9b1",
+          "title": "Livec9F9E4Cb-B22E-447F-A656-Ccf4Fe9De9B1",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5646.HEIC",
+          "videoURL": "videos/livec9f9e4cb_b22e_447f_a656_ccf4fe9de9b1.mov",
+          "thumbnailURL": "images/IMG_5646.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 2219105,
+            "formatted": "2.1 MB"
+          },
+          "createdAt": "2025-07-19T03:18:50.812779+00:00"
+        },
+        {
+          "id": "livecd2f5142_61fb_4a9b_83c5_f49ea4568128",
+          "title": "Livecd2F5142-61Fb-4A9B-83C5-F49Ea4568128",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5647.HEIC",
+          "videoURL": "videos/livecd2f5142_61fb_4a9b_83c5_f49ea4568128.mov",
+          "thumbnailURL": "images/IMG_5647.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 842983,
+            "formatted": "823.2 KB"
+          },
+          "createdAt": "2025-07-19T03:18:50.871108+00:00"
+        },
+        {
+          "id": "liveecf0cab0_90b0_431c_b75e_19e41543d42a",
+          "title": "Liveecf0Cab0-90B0-431C-B75E-19E41543D42A",
+          "description": "Live Photo from paired HEIC and MOV files",
+          "imageURL": "images/IMG_5629.HEIC",
+          "videoURL": "videos/liveecf0cab0_90b0_431c_b75e_19e41543d42a.mov",
+          "thumbnailURL": "images/IMG_5629.HEIC",
+          "isPremium": false,
+          "tags": [
+            "anime"
+          ],
+          "duration": 1.1,
+          "size": {
+            "bytes": 119685,
+            "formatted": "116.9 KB"
+          },
+          "createdAt": "2025-07-19T03:18:50.921753+00:00"
         }
       ]
     }
